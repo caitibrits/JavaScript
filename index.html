@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="formstyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./javascriptforms.js" defer></script>
+    <title>Frontend Validation 1</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Form:</h1>
+        </div>
+        <form class="form" id="form">
+
+            <div class="form-control">
+                <label>New task:</label>
+                <input type="text" id="newTask" placeholder="Required" required>
+                <small>*Must not contain html characters</small>
+            </div>
+
+            <div class="form-control">
+                <label>Task description:</label>
+                <input type="text" id="taskDescription" placeholder="Optional">
+            </div>
+
+            <div class="form-control">
+                <label>Set Task due date:</label>
+                <input type="date" id="dateInput" max="2022" min="2022" name="dueDate" required />
+                <small>*Required. Must select a date</small>
+            </div>
+
+            <div class="form-control">
+                <label>Set Task due time:</label>
+                <input type="time" id="timeInput" minlength="1 hour" maxlength="10 hours" name="time"
+                        required />
+                <small>*Required. Must select a time</small>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+
