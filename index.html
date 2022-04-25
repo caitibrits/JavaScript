@@ -16,23 +16,27 @@
         </div>
         <form class="form" id="form">
 
+            <!--new task-->
             <div class="form-control">
                 <label>New task:</label>
                 <input type="text" id="newTask" placeholder="Required" required>
                 <small>*Must not contain html characters</small>
             </div>
 
+            <!--task description-->
             <div class="form-control">
                 <label>Task description:</label>
                 <input type="text" id="taskDescription" placeholder="Optional">
             </div>
 
+            <!--task due date-->
             <div class="form-control">
                 <label>Set Task due date:</label>
                 <input type="date" id="dateInput" max="2022" min="2022" name="dueDate" required />
                 <small>*Required. Must select a date</small>
             </div>
 
+            <!--task deadline-->
             <div class="form-control">
                 <label>Set Task due time:</label>
                 <input type="time" id="timeInput" minlength="1 hour" maxlength="10 hours" name="time"
