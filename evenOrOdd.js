@@ -1,27 +1,17 @@
-({
-    babel: true
-})
+// let number = prompt('Choose a number: ');
+
+// const remainder = (number % 2)
+
+// if (remainder == 0) {
+// 	console.log ('${number} is even');
+// } else {
+// 	console.log ('${number} is odd');
+// }
+
+// let result = alert(remainder"It's even!")
 
 
-const form = document.getElementById('form');
-const newTask = document.getElementById("newTask");
+let number = prompt('Choose a number: ');
 
-form.addEventListener('submit', e => {
-  e.preventDefault();
+console.log(number % 2 === 0 ? "Even" : "Odd");
 
-  checkInputs();
-});
-
-function checkInputs() {
-  //get values from inputs
-  const newTaskValue = newTask.value.trim();
-
-  if(newTaskValue.includes("<" || ">")) {
-    //show error
-    //add error class
-    setErrorFor(newTask, 'Please make sure your task contains no HTML characters');
-  } else {
-    //add success class
-    setSuccessFor(newTask);
-  }
-}
