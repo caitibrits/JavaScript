@@ -1,4 +1,4 @@
-let addUserButton = document.getElementById('addUser');
+let addUser = document.getElementById('addUser');
 let userContainer = document.getElementById('userContainer');
 let inputField = document.getElementById('inputField');
 
@@ -23,25 +23,26 @@ let menuOptions = [
 ];
 
 let choices = prompt('Choose an option:\n 1) Add three Users \n 2) Remove User \n 3) Display users \n 4) Sort users');
+const selected = choices;
 
 // function options() {
-switch (menuOptions) {
+switch (selected) {
     case '1':
-        addUserButton()
-            let li = document.createElement('li');
-            li.innerText = inputField.Value;
-            userContainer.appendChild(li);
-            console.log(inputField);
+        let li = document.createElement('li');
+        li.innerText = inputField.Value;
+        userContainer.appendChild(li);
+        console.log(userList);
         break;
     case '2':
-        li.addEventListener('click', function () {
-            li.removeChild(li);})
+        userList.splice(2, 1);
+        console.log(userList);
         break;
     case '3':
-        console.log(`${user1} ${user2} ${user3} ${user4} ${user5} ${user6} ${user7} ${user8} ${user9} ${user10}`)
+        console.log(`${userList}`)
         break;
     case '4':
         userList.sort();
+        console.log(userList);
         break;
 }
 // 
