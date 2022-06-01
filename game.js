@@ -58,8 +58,7 @@ startGame = () => {
 
 getNewQuestions = () => {
     if(availableQuestions.length === 0 || questionCounter > MAX_QUESTIONS) {
-        localStorage.setItem('mostRecentScore', score)
-
+        console.log('mostRecentScore', score)
     }
 
     questionCounter ++
@@ -100,7 +99,7 @@ choices.forEach(choice => {
             selectedChoice.parentElement.classList.remove(classToApply)
             getNewQuestions()
 
-        }), 1000
+        }), 1000;
     })
     console.log(score);
 })
