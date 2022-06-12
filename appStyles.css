@@ -1,10 +1,10 @@
 :root {
-    --dark: #d1e2a9;
-    --darker: #7f8d60;
-    --darkest: #5b6640;
+    --dark: #ddebbc;
+    --darker: #a4b67d;
+    --darkest: #8d9e62;
     --gray: #5d6170;
     --light: #EEE;
-    --brown: #998e71; 
+    --brown: #75663d; 
 }
 
 * {
@@ -110,7 +110,7 @@ main {
 
 #tasks .task .content .text {
     color: var(--light);
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     width: 100%;
     display: block;
     transition: 0.4s;
@@ -147,5 +147,5 @@ main {
 }
 
 .task .actions .delete {
-    color: red;
+    color: rgb(212, 111, 111);
 }
